@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  margin-bottom: 5px;
+  padding: 0 5px;
+}
+
+@media (max-width: 450px) {
+  .column {
+    width: 30%;
+    display: block;
+  }
+}
+
+.container {
+  padding: 0 5px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: white;
+}
+body {
+	margin: 0;
+	color: black;
+	background-image: url("wall_about.jpg");
+	background-color: #cccccc;
+	background-position: 30% 20%;
+	background-size: 1440px 1440px;
+	background-repeat: no-repeat;
+	font: 600 16px/18px 'Open Sans', sans-serif;
+}
+J {
+	color: white;
+}
+</style>
+</head>
+<body>
+<br>
+<J><center><h1>Mentors</h1></center></J>
+<br><br><br><br><br><br>
+
+<center>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="saurabh.jpg" style="width:70%">
+      <div class="container">
+        <J><h3>Mr. Saurabh Mengale</h3></J>
+        <p class="title">Professor</p>
+        <J><p>Cummins College of Engineering Pune</p></J>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="chintan.jpeg" style="width:70%">
+      <div class="container">
+        <J><h3>Mr. Chintan Thaker</h3></J>
+        <p class="title">Senior Software Engineer</p>
+        <J><p>IBM India Private Ltd.</p></J>
+      </div>
+    </div>
+  </div>
+  
+   <div class="column">
+    <div class="card">
+      <img src="joy.jpg" style="width:70%">
+      <div class="container">
+        <J><h3>Mr. Subhrojoy Roy</h3></J>
+        <p class="title">Software Developer</p>
+        <J><p>IBM India Private Ltd.</p></J>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="paradkar.jpeg" style="width:70%">
+      <div class="container">
+        <J><h3>Mr. Mahesh Paradkar</h3></J>
+        <p class="title">Senior Development Manager</p>
+        <J><p>IBM India Private Ltd.</p></J>
+      </div>
+    </div>
+  </div>
+</center>
+</body>
+</html>
